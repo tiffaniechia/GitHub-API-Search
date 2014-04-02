@@ -5,6 +5,7 @@
 			<link href='http://fonts.googleapis.com/css?family=Codystar' rel='stylesheet' type='text/css'>
 			<link href="reset.css" type="text/css" rel="stylesheet">
 			<link href="style.css" type="text/css" rel="stylesheet">
+			<meta charset='utf-8'>
 	</head>
 	<body>
 
@@ -23,27 +24,39 @@
 				</div>
 				<div class="right"> 
 					<h3>
-						<a href="{{url}}">{{login}}</a>
+						<a href="{{html_url}}">{{login}}</a>
 					</h3>	
 					<h4> Following: {{ following }} </h4>
 					<h4> Followers: {{ followers }} </h4>
 				</div>
+				 <div class="remove">
+				 <a class='close' href='#'>✖</a>
+				 <br clear="all">
+				 </div>
+				 </div>
 			</template> 
 		</div>
 
 		<script src='https://code.jquery.com/jquery-2.1.0.min.js'></script>
 		<script src='mustache.js'></script>
 		<script>
+
 			$(document).ready(function() {
+
+				$('#container').on('click', '.close', function(){
+					$(this).closest('.profile').remove();
+				})
+
 				$(".search").on("submit", function(event){
 					event.preventDefault();
 					var user = $("#username").val();
 
 					$.get("https://api.github.com/users/" + user, function(user1) {
 						var newProfile = Mustache.render($("#profile-template").html(), user1);
-
-					$("#container").prepend(newProfile)
-					}) 
+					$(newProfile).prependTo("#container").hide().slideDown();
+					}).fail(function(){
+						alert("user does not exist, sorry!")
+					})
 				})
 			})
 		</script>
