@@ -4,23 +4,26 @@
 		<title>github API</title>
 			<link href="style.css" type="text/css" rel="stylesheet">
 	</head>
-	<body><!-- 
-		avatar 
-		followers
-		following 
-		login mame
-		real name 
-		total commits  -->
+	<body>
 		<form class="search">
 			<input id="username" placeholder="please enter username">
 				<button type="submit">Submit</button>  
 		</form> 
 
 		<div id="container">
-			<div id="profile-template">
-				
-			</div> 
-
+			<template id="profile-template">
+			<div class="profile"> 
+				<div class="left"> 
+					<img src="{{ avatar_url }}">
+				</div>
+				<div class="right"> 
+					<h3>
+						<a href="{{url}}">{{login}}</a>
+					</h3>	
+					<h4> following: {{ following }} </h4>
+					<h4> followers: {{ followers }} </h4>
+				</div>
+			</template> 
 		</div>
 
 		<script src='https://code.jquery.com/jquery-2.1.0.min.js'></script>
@@ -35,12 +38,9 @@
 						var newProfile = Mustache.render($("#profile-template").html(), user1);
 
 					$("#container").prepend(newProfile)
-					)} 
+					}) 
 				})
-			}
-
-
-
+			})
 		</script>
 	</body>
 </html>
