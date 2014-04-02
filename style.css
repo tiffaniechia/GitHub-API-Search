@@ -1,0 +1,74 @@
+body
+{
+   font-family: 'Codystar', cursive;
+   text-align: center;
+}
+
+h1
+{
+  font-family: 'Codystar', cursive;
+  font-size: 2em;
+  margin: 20px 20px;
+}
+
+.profile 
+{
+  background-color: rgb(189,177,173);
+  border-radius: 6px;
+  border: 2px solid rgb(174,162,158);
+  width: 40%;
+  height: 150px;
+  margin: 10px 20px;
+  text-align: center;
+  margin: auto;
+}
+
+
+.profile .left {
+  width: 20%;
+  float: left;
+}
+
+.left img
+{
+  width:150px;
+  height:150px;
+}
+.profile .right {
+  width: 80%;
+  float: left;
+  padding: 20px 60px;
+  box-sizing: border-box;
+}
+
+.profile .right h3
+{
+ 
+  font-size: 1.8em;
+/*  font-weight: bold;*/
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.profile .right h4
+{
+ font-size: 0.7em;
+ margin-bottom: 5px;
+}
+
+a
+{
+   text-decoration: none;
+}
+
+
+.search
+{
+  margin:30px 20px;
+}
+
+.search #username
+{
+  width: 38%;
+}
+
