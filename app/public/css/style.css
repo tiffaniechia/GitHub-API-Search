@@ -2,7 +2,7 @@ body
 {
    font-family: 'Codystar', cursive;
    text-align: center;
-   background-image: url('diamond_upholstery.png');
+   background-image: url('/images/diamond_upholstery.png');
 }
 
 h1
