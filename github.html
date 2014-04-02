@@ -16,10 +16,31 @@
 				<button type="submit">Submit</button>  
 		</form> 
 
-		<div id="container">  
+		<div id="container">
+			<div id="profile-template">
+				
+			</div> 
 
+		</div>
 
 		<script src='https://code.jquery.com/jquery-2.1.0.min.js'></script>
 		<script src='mustache.js'></script>
+		<script>
+			$(document).ready(function() {
+				$(".search").on("submit", function(event){
+					event.preventDefault();
+					var user = $("#username").val();
+
+					$.get("https://api.github.com/users/" + user, function(user1) {
+						var newProfile = Mustache.render($("#profile-template").html(), user1);
+
+					$("#container").prepend(newProfile)
+					)} 
+				})
+			}
+
+
+
+		</script>
 	</body>
 </html>
