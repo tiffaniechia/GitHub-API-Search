@@ -23,6 +23,7 @@ This task was set by [Alex Peattie](https://github.com/alexpeattie) as part of [
 - JQuery
 - JSON
 - Moustache.js
+- GitHub API
 
 
 ###Github API Task was a collaboration between 4 individuals:
