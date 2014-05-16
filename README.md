@@ -28,7 +28,7 @@ This task was set by [Alex Peattie](https://github.com/alexpeattie).
 - GitHub API
 
 
-###Github API Task was a collaboration between 4 individuals:
+##Collaborators
 
 - [Mark Mekhaiel](https://github.com/markmekhaiel)
 - [Fred Mcgroarty](https://github.com/fredmcgroarty)
