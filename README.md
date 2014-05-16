@@ -7,7 +7,7 @@ The app is capable of showing error messages if the input is not a valid user na
 
 This task was set by [Alex Peattie](https://github.com/alexpeattie).
 
-(Week 8)
+(Week 7)
 
 ###The app is available [here](http://github-api-t.herokuapp.com/). 
 
