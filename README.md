@@ -9,7 +9,7 @@ This task was set by [Alex Peattie](https://github.com/alexpeattie).
 
 (Week 8)
 
-##The app is available [here](http://github-api-t.herokuapp.com/). 
+###The app is available [here](http://github-api-t.herokuapp.com/). 
 
 
 
